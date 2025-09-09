@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+        "header header" 
+        "content-left content-right"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+}
+
+.header {
+    grid-area: header;
+    background-color: red;
+}
+
+.content-left {
+    grid-area: content-left;
+    background-color: green;
+}
+
+.content-right {
+    grid-area: content-right;
+    background-color: violet;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: yellow;
+}
