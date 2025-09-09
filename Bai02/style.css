@@ -94,6 +94,7 @@ input[type="submit"] {
     color: #63606A;
     padding: 6px;
 }
+
 .content-heading + hr {
     border: none;
     border-top: 2px dashed #999;
@@ -177,10 +178,26 @@ input[type="submit"] {
 
 #content-right {
     grid-area: content-right;
-    background-color: blue;
+    background-color: #fff;
+}
+
+.box__content {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 20px 10px 0 0;
+}
+
+.heading  hr {
+    border: none;
+    border-top: 2px dashed #999;
+    margin-bottom: 12px;
+}
+
+.box__content img {
+    margin-bottom: 30px;
 }
 
 #footer {
     grid-area: footer;
-    background-color: violet;
+    background-color: #294E79;
 }
