@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: "header header" "left right" "footer footer";
+    grid-template-columns: 2fr 1fr;
+}
+
+#header {
+    grid-area: header;
+    background-color: red;
+}
+
+#header .nav {
+    list-style: none;
+    display: flex;
+}
+
+#header .logo {
+    display: flex;
+}
+
+#left {
+    grid-area: left;
+    background-color: green;
+}
+
+#right {
+    grid-area: right;
+    background-color: blue;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: violet;
+}
