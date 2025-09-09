@@ -71,63 +71,108 @@ input[type="submit"] {
 /* content-left */
 
 #content-left {
-    grid-area: content-left;
-    background-color: #fff;
+  grid-area: content-left;
+  padding: 20px;
+  background: #fff;
 }
 
 .content-left__main {
     display: flex;
     gap: 30px;
-    align-items: flex-start;
 }
 
 .content-left__main-des {
     flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
 
 .content-left__main-info {
-    display: flex;
     flex: 1;
 }
-
-.content-left__main-des-form label {
-    display: block;
-    margin-bottom: 6px;
-    color: #333;
-    font-size: 14px;
+.content-heading {
+    font-size: 20px;
+    font-weight: 400;
+    color: #63606A;
+    padding: 6px;
 }
-
-.content-left__main-des-form input,
-.content-left__main-des-form textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    background: #fafafa;
-    border-radius: 2px;
-    box-sizing: border-box;
-}
-
-.content-left__main-des-form textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-/* nút */
-.content-left__main-des-form button {
-    padding: 8px 14px;
-    margin-right: 12px;
-    cursor: pointer;
-}
-
-/* hr kiểu nét đứt */
-.content-left__main-heading hr,
-.content-left__main-info-heading hr {
+.content-heading + hr {
     border: none;
     border-top: 2px dashed #999;
-    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.content-intro {
+    color: #b00;
+    text-shadow: 1px 1px 3px #7f7;
+    margin-bottom: 16px;
+}
+
+.contact-form .form-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%; /* chiem khoang 45% hang*/
+}
+
+.contact-form .form-row.full-width {
+  flex: 1 1 100%; /* chiem full chieu ngang */
+}
+
+.contact-form label {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-actions {
+  flex: 1 1 100%;
+  margin-top: 10px;
+}
+
+
+.form-actions input {
+  padding: 6px 14px;
+  margin-right: 10px;
+  border: 1px solid #aaa;
+  background: #f7f7f7;
+  cursor: pointer;
+  color: #000;
+}
+
+.form-actions input:hover {
+  background: #ddd;
+}
+
+
+.content-left__main-info-heading {
+    font-size: 20px;
+    font-weight: 400;
+    color: #63606A;
+    padding: 6px;
+}
+
+.content-left__main-info hr {
+    border: none;
+    border-top: 2px dashed #999;
+    margin-bottom: 12px;
+}
+
+.content-left__main-info--part1,
+.content-left__main-info--part2,
+.content-left__main-info--part3 {
+    margin-bottom: 50px;
 }
 
 #content-right {
