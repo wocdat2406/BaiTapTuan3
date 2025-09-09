@@ -200,4 +200,9 @@ input[type="submit"] {
 #footer {
     grid-area: footer;
     background-color: #294E79;
+    padding: 10px;
+}
+
+#footer p {
+    color: #fff;
 }
