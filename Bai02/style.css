@@ -6,31 +6,75 @@
 
 #container {
     display: grid;
-    grid-template-areas: "header header" "left right" "footer footer";
-    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header-left header-right header-right" "content-left content-left content-right" "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#header {
-    grid-area: header;
-    background-color: red;
+
+/* Header left */
+#header-left {
+    grid-area: header-left;
+    background-color:#294E79;
 }
 
-#header .nav {
-    list-style: none;
+.logo {
     display: flex;
+    align-items: center;
 }
 
-#header .logo {
+.header__logo {
+    width: 100px;
+}
+
+.header__logo-description {
+    color: #fff;
+}
+
+
+/* header right */
+.header-right {
+    grid-area: header-right;
+    background-color: #294E79;
+    
+}
+
+.form {
+    gap: 20px;
     display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    margin: 20px;
 }
 
-#left {
-    grid-area: left;
+.nav__search {
+    border: 2px solid #497EBF;
+    background-color: rgba(28, 52, 81, 0.8);
+    
+}
+
+input::placeholder {
+    color: #fff; 
+}
+
+input[type="submit"] {
+    color: #fff; 
+}
+
+.nav__submit {
+    cursor: pointer;
+    padding: 4px;
+    border: 2px solid #497EBF;
+    background-color: rgba(28, 52, 81, 0.8);
+}
+
+
+#content-left {
+    grid-area: content-left;
     background-color: green;
 }
 
-#right {
-    grid-area: right;
+#content-right {
+    grid-area: content-right;
     background-color: blue;
 }
 
