@@ -38,7 +38,11 @@
         .nav li {
             margin-right: 20px;
             font-weight: bold;
+        }
+
+        .nav li a {
             color: white;
+            text-decoration: none;
         }
 
         #logo h3 {
@@ -48,10 +52,13 @@
             text-shadow: 2px 2px 4px #0000FF;
         }
 
+        #header {
+            border-bottom: 4px dotted white;
+        }
 
         #left {
             grid-area: left;
-            background-color: green;
+            background-color: #6bc5ed;
         }
 
         #right {
@@ -71,16 +78,17 @@
         <div id="header">
             <div class="header-content">
                 <ul class="nav">
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>Services</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
                 <div id="logo">
                     <h3>Sky World</h3>
                 </div>
             </div>
+            
         </div>
 
         <div id="left">Left</div>
