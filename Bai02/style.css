@@ -68,9 +68,66 @@ input[type="submit"] {
 }
 
 
+/* content-left */
+
 #content-left {
     grid-area: content-left;
-    background-color: green;
+    background-color: #fff;
+}
+
+.content-left__main {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.content-left__main-des {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-left__main-info {
+    display: flex;
+    flex: 1;
+}
+
+.content-left__main-des-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 14px;
+}
+
+.content-left__main-des-form input,
+.content-left__main-des-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.content-left__main-des-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* nút */
+.content-left__main-des-form button {
+    padding: 8px 14px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* hr kiểu nét đứt */
+.content-left__main-heading hr,
+.content-left__main-info-heading hr {
+    border: none;
+    border-top: 2px dashed #999;
+    margin-top: 8px;
 }
 
 #content-right {
