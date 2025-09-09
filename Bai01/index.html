@@ -4,12 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai 01</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        html {
+            background-color: #6bc5ed;
+        }
+
+        #container {
+            display: grid;
+            grid-template-areas: "header header" "left right" "footer footer";
+            grid-column: 1fr 1fr;
+        }
+
+        #header {
+            grid-area: header;
+            background-color: #6bc5ed;
+            padding: 10px 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav li {
+            margin-right: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #logo h3 {
+            margin: 0;
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 4px #0000FF;
+        }
+
+
+        #left {
+            grid-area: left;
+            background-color: green;
+        }
+
+        #right {
+            grid-area: right;
+            background-color: blue;
+        }
+
+        #footer {
+            grid-area: footer;
+            background-color: violet;
+        }
+
+    </style>
 </head>
 <body>
     <div id="container">
         <div id="header">
-            <div>
+            <div class="header-content">
                 <ul class="nav">
                     <li>Home</li>
                     <li>Products</li>
@@ -17,7 +77,9 @@
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
-                <div id="logo">Sky World</div>
+                <div id="logo">
+                    <h3>Sky World</h3>
+                </div>
             </div>
         </div>
 

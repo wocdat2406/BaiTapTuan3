@@ -1,0 +1,43 @@
+html {
+    background-color: #6bc5ed;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: "header header" "left right" "footer footer";
+    grid-column: 1fr 1fr;
+}
+
+#header {
+    grid-area: header;
+    background-color: red;
+}
+
+#header .nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin: 0 6px;
+}
+
+#header .logo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#left {
+    grid-area: left;
+    background-color: green;
+}
+
+#right {
+    grid-area: right;
+    background-color: blue;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: violet;
+}
