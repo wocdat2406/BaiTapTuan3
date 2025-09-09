@@ -13,9 +13,43 @@
     grid-template-columns: 2fr 1fr;
 }
 
+
 .header {
     grid-area: header;
-    background-color: red;
+    background-color: #fff;
+}
+
+.header__heading {
+    background-color: #AC4B16;
+    padding: 24px 24px;
+    font-size: 20px;
+    text-shadow: -6px -9px 9px #fff;
+    color: #7F8000;
+}
+
+.header__menu {
+    background-color: #fff;
+}
+
+.header__menu-btn {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    padding: 20px 0;
+    font-size: 24px;  
+    color: #AC4B16;
+    cursor: pointer;
+}
+
+.header__menu-btn:first-child {
+    margin-left: 16px;
+}
+
+.header__menu-img img {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
 }
 
 .content-left {
