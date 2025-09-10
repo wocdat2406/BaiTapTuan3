@@ -54,7 +54,25 @@
 
 .content-left {
     grid-area: content-left;
-    background-color: green;
+    background-color: #fff;
+}
+
+.content-left__heading {
+    padding-top: 50px;
+    margin-left: 10px;
+    font-size: 60px;
+    color: #AC7400;
+}
+
+.content-left__descreption {
+    padding: 0 40px;
+    color: #AE983E;
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+.content-left__form {
+    
 }
 
 .content-right {
