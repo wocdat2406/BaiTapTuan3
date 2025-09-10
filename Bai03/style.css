@@ -138,6 +138,35 @@
     font-size: 30px;
 }
 
+.content-right__more-info {
+    margin-left: 60px;
+    font-size: 30px;
+    color: #d08f0c;
+    padding: 20px 0;
+}
+
+.content-right__descreption {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.content-right__descreption img {
+    width: 150px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.content-right__descreption p {
+    max-width: 400px;  /* Giới hạn chiều rộng của văn bản */
+    font-size: 30px;
+    line-height: 1.5;
+}
+
 .footer {
     grid-area: footer;
     background-color: yellow;
