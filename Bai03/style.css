@@ -55,6 +55,7 @@
 .content-left {
     grid-area: content-left;
     background-color: #fff;
+    border-right: 1px solid #ccc;
 }
 
 .content-left__heading {
@@ -97,11 +98,32 @@
     transition: 0.2s ease all;
 }
 
+.content-left__form-row button {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    background-color: #808000;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
 
 .content-right {
     grid-area: content-right;
-    background-color: violet;
+    background-color: #fff;
+}
+
+.content-right__list {
+    background-color: #FAEBD7;
+    margin: 0 20px;
+    border-radius: 43px 42px 0px 0px;
+}
+
+.content-right__list-links h1 {
+    margin-left: 30px;
+    color: #d08f0c;
 }
 
 .footer {
