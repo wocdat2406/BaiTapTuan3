@@ -122,8 +122,20 @@
 }
 
 .content-right__list-links h1 {
+    font-size: 60px;
     margin-left: 30px;
     color: #d08f0c;
+}
+
+.content-right__list-links ul {
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+.content-right__list-links li {
+    color: #AC4B16;
+    list-style: square;
+    font-size: 30px;
 }
 
 .footer {
