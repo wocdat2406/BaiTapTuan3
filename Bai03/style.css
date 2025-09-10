@@ -72,8 +72,32 @@
 }
 
 .content-left__form {
-    
+    padding: 0 40px;
 }
+
+.content-left__form-row input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 7px 0;  /* Giảm padding để input ngắn lại */
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    position: relative;
+    top: 4px;  /* Điều chỉnh vị trí input gần đường gạch */
+}
+
+.content-left__form-row input::placeholder {
+    color: #ccc; 
+    font-size: 24px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    transition: 0.2s ease all;
+}
+
+
 
 .content-right {
     grid-area: content-right;
